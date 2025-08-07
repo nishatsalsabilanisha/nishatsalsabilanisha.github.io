@@ -91,8 +91,18 @@
                 <div class="relative">
                     <div class="glass-effect rounded-2xl p-8 floating-card">
                         <div class="text-center">
-                            <div class="w-32 h-32 bg-gradient-to-br from-green-400 to-green-600 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl font-bold text-black">
-                                NA
+                            <div class="w-32 h-32 bg-gradient-to-br from-green-400 to-green-600 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl font-bold text-black overflow-hidden">
+                                <!-- Option 1: Use your GitHub profile picture (replace 'nishatsalsabilanisha' with your GitHub username) -->
+                                <img src="https://github.com/nishatsalsabilanisha.png" alt="Nishat Salsabil Anisha" class="w-full h-full object-cover rounded-full" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                
+                                <!-- Fallback initials if image fails to load -->
+                                <span class="text-4xl font-bold text-black" style="display: none;">NA</span>
+                                
+                                <!-- Option 2: If you want to use a different image, replace the src above with:
+                                     - LinkedIn profile picture URL
+                                     - Any public image URL
+                                     - Or upload to GitHub and use: https://raw.githubusercontent.com/yourusername/repository/main/profile.jpg
+                                -->
                             </div>
                             <div class="space-y-2">
                                 <div class="flex justify-between items-center">
@@ -588,5 +598,5 @@
     </footer>
 
     <script src="script.js"></script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96b971f5a3f27e66',t:'MTc1NDU5NzcxNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96b97778f59b7e66',t:'MTc1NDU5Nzk0My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
