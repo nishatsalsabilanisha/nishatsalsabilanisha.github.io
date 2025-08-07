@@ -6,128 +6,7 @@
     <title>Nishat Salsabil Anisha - Developer Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
-        
-        body { 
-            font-family: 'Space Grotesk', sans-serif; 
-            background: #0a0a0a;
-            color: #ffffff;
-        }
-        .code-font { font-family: 'JetBrains Mono', monospace; }
-        
-        .neon-glow {
-            box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
-            border: 1px solid rgba(34, 197, 94, 0.5);
-        }
-        
-        .neon-text {
-            text-shadow: 0 0 10px rgba(34, 197, 94, 0.8);
-        }
-        
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        .terminal-window {
-            background: #1a1a1a;
-            border: 1px solid #333;
-            border-radius: 8px;
-        }
-        
-        .terminal-header {
-            background: #2a2a2a;
-            padding: 8px 16px;
-            border-bottom: 1px solid #333;
-            border-radius: 8px 8px 0 0;
-        }
-        
-        .dot { 
-            width: 12px; 
-            height: 12px; 
-            border-radius: 50%; 
-            display: inline-block; 
-            margin-right: 8px; 
-        }
-        
-        .dot-red { background: #ff5f56; }
-        .dot-yellow { background: #ffbd2e; }
-        .dot-green { background: #27ca3f; }
-        
-        .typing-animation {
-            overflow: hidden;
-            border-right: 2px solid #22c55e;
-            white-space: nowrap;
-            animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
-        }
-        
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-        
-        @keyframes blink-caret {
-            from, to { border-color: transparent; }
-            50% { border-color: #22c55e; }
-        }
-        
-        .floating-card {
-            transform: translateY(0);
-            transition: all 0.3s ease;
-        }
-        
-        .floating-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(34, 197, 94, 0.2);
-        }
-        
-        .skill-progress {
-            background: linear-gradient(90deg, #22c55e, #16a34a);
-            height: 4px;
-            border-radius: 2px;
-            transition: width 2s ease-in-out;
-        }
-        
-        .matrix-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: -1;
-            opacity: 0.1;
-        }
-        
-        .hexagon {
-            width: 60px;
-            height: 34.64px;
-            background: rgba(34, 197, 94, 0.2);
-            margin: 17.32px 0;
-            position: relative;
-        }
-        
-        .hexagon:before,
-        .hexagon:after {
-            content: "";
-            position: absolute;
-            width: 0;
-            border-left: 30px solid transparent;
-            border-right: 30px solid transparent;
-        }
-        
-        .hexagon:before {
-            bottom: 100%;
-            border-bottom: 17.32px solid rgba(34, 197, 94, 0.2);
-        }
-        
-        .hexagon:after {
-            top: 100%;
-            border-top: 17.32px solid rgba(34, 197, 94, 0.2);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-black text-white overflow-x-hidden">
     <!-- Matrix Background -->
@@ -183,7 +62,7 @@
                             <div class="text-green-400 mb-2">$ cat skills.txt</div>
                             <div class="text-white mb-4">Python | C++ | JavaScript | Data Analysis</div>
                             <div class="text-green-400 mb-2">$ echo $EDUCATION</div>
-                            <div class="text-white mb-4">CSE Student @ IUBAT | CGPA: 3.97/4.00</div>
+                            <div class="text-white mb-4">CSE Student @ IUBAT | CGPA: 3.91/4.00</div>
                             <div class="text-green-400 mb-2">$ status</div>
                             <div class="text-white typing-animation">Ready for new opportunities...</div>
                         </div>
@@ -265,7 +144,7 @@
                                         <div class="border-l-2 border-green-500 pl-4">
                                             <h5 class="font-semibold">BSc Computer Science & Engineering</h5>
                                             <p class="text-sm text-gray-400">IUBAT University (2022-Present)</p>
-                                            <p class="text-sm text-green-400">CGPA: 3.97/4.00</p>
+                                            <p class="text-sm text-green-400">CGPA: 3.91/4.00</p>
                                         </div>
                                         <div class="border-l-2 border-gray-600 pl-4">
                                             <h5 class="font-semibold">HSC - Science</h5>
@@ -708,119 +587,6 @@
         </div>
     </footer>
 
-    <script>
-        // Matrix rain effect
-        const canvas = document.getElementById('matrix');
-        const ctx = canvas.getContext('2d');
-
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        const matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
-        const matrixArray = matrix.split("");
-
-        const fontSize = 10;
-        const columns = canvas.width / fontSize;
-
-        const drops = [];
-        for(let x = 0; x < columns; x++) {
-            drops[x] = 1;
-        }
-
-        function drawMatrix() {
-            ctx.fillStyle = 'rgba(0, 0, 0, 0.04)';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-            
-            ctx.fillStyle = '#22c55e';
-            ctx.font = fontSize + 'px monospace';
-
-            for(let i = 0; i < drops.length; i++) {
-                const text = matrixArray[Math.floor(Math.random() * matrixArray.length)];
-                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-                
-                if(drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
-                    drops[i] = 0;
-                }
-                drops[i]++;
-            }
-        }
-
-        setInterval(drawMatrix, 35);
-
-        // Smooth scrolling
-        function scrollToSection(sectionId) {
-            document.getElementById(sectionId).scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-
-        // Navigation links
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                scrollToSection(targetId);
-            });
-        });
-
-        // Skill bar animation
-        const observerOptions = {
-            threshold: 0.5,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const skillBars = entry.target.querySelectorAll('.skill-progress');
-                    skillBars.forEach(bar => {
-                        const width = bar.style.width;
-                        bar.style.width = '0%';
-                        setTimeout(() => {
-                            bar.style.width = width;
-                        }, 200);
-                    });
-                }
-            });
-        }, observerOptions);
-
-        const skillsSection = document.getElementById('skills');
-        if (skillsSection) {
-            observer.observe(skillsSection);
-        }
-
-        // Form submission
-        function handleFormSubmit(event) {
-            event.preventDefault();
-            alert('Thank you for your message! This is a demo form. Please use the contact information provided to reach out directly.');
-        }
-
-        // Active navigation highlighting
-        window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('section[id]');
-            const navLinks = document.querySelectorAll('.nav-link');
-            
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (scrollY >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('bg-green-500', 'text-black');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('bg-green-500', 'text-black');
-                }
-            });
-        });
-
-        // Resize canvas on window resize
-        window.addEventListener('resize', () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        });
-    </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96b965b4d2d37e63',t:'MTc1NDU5NzIxNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+    <script src="script.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96b971f5a3f27e66',t:'MTc1NDU5NzcxNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
