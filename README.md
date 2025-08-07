@@ -14,7 +14,6 @@
             background: #0a0a0a;
             color: #ffffff;
         }
-        
         .code-font { font-family: 'JetBrains Mono', monospace; }
         
         .neon-glow {
