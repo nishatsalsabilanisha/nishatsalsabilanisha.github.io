@@ -154,7 +154,7 @@
                                         <div class="border-l-2 border-green-500 pl-4">
                                             <h5 class="font-semibold">BSc Computer Science & Engineering</h5>
                                             <p class="text-sm text-gray-400">IUBAT University (2022-Present)</p>
-                                            <p class="text-sm text-green-400">CGPA: 3.91/4.00</p>
+                                            <p class="text-sm text-green-400">CGPA: 3.93/4.00</p>
                                         </div>
                                         <div class="border-l-2 border-gray-600 pl-4">
                                             <h5 class="font-semibold">HSC - Science</h5>
