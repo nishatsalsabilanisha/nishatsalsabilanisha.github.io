@@ -60,7 +60,7 @@
                             <div class="text-green-400 mb-2">$ whoami</div>
                             <div class="text-white mb-4">Nishat Salsabil Anisha</div>
                             <div class="text-green-400 mb-2">$ cat skills.txt</div>
-                            <div class="text-white mb-4">Python | C++ | JavaScript | Data Analysis</div>
+                            <div class="text-white mb-4">Python | C++ | C | C#  | Data Analysis</div>
                             <div class="text-green-400 mb-2">$ echo $EDUCATION</div>
                             <div class="text-white mb-4">CSE Student @ IUBAT | CGPA: 3.91/4.00</div>
                             <div class="text-green-400 mb-2">$ status</div>
